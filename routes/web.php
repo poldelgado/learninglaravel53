@@ -20,3 +20,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/customers', 'CustomerController@listar'); 
+
+Route::get('/producto', 'ProductoController@index');
+
+Route::get('/producto/create', 'ProductoController@create');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
